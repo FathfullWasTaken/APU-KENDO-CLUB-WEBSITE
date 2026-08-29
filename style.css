@@ -168,7 +168,7 @@ h2 {
 
 .team {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* 3 equal-width columns */
+  grid-template-columns: repeat(3, 1fr);  
   gap: 40px;
   padding: 60px 40px;
 }
@@ -176,7 +176,7 @@ h2 {
 .member img {
   width: 100%;
   height: 350px;
-  object-fit: flex;    /* fills the box, crops overflow, no stretching */
+  object-fit: flex;   
   border-radius: 8px;
 }
 
