@@ -1,6 +1,248 @@
 body {
-     background-color: lightblue;
+  font-family: "Poppins", sans-serif;
+  background-color:rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  padding: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;  
+}
+
+
+h2 {
+  color: darkblue;
+  font-family: "Poppins", sans-serif;
+}
 
 
 
+
+.card {
+  background-color: rgb(222, 222, 229);
+  box-shadow: gray 0px 4px 8px 0px;
+  width: 3000px; 
+  padding: 20px; 
+  margin: 30px auto; 
+  border-radius: 10px; 
+  padding: 20px;
+  margin: 30px auto;
+  font-family: "Times New Roman", serif;
+}
+
+
+.pop-in {
+  opacity: 0;
+  transform: scale(0.8) translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.pop-in.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.839);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+}
+
+.logo {
+  height: 50px;     
+  width: auto;      
+  display: block;
+}
+
+
+
+.hero {
+  position: relative;   
+  width: 100%;
+  height: 90vh;         
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    
+  filter: brightness(50%);  
+}
+
+.hero-text {
+  font-family: "Noto Serif JP", sans-serif;
+  position: absolute;   
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);  
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  writing-mode: vertical-rl;  
+  text-align: center;
+}
+
+.highlight {
+  color: #b22222;  
+}
+
+.info {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+
+#p1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0)
+  
+}
+ 
+#p2 {
+ 
+  font-weight: bold;
+  color: rgb(0, 0, 0)
+ 
+
+
+
+
+}
+
+#face {
+  margin-right: 600px;
+  display: flex;
+  font-weight: 10000;
+  text-align: left;
+  color: rgb(255, 8, 8)
+  
+  
+
+   
+}
+
+
+#header {
+  text-align: center;
+  color: darkblue;
+  font-family: Tahoma, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 equal-width columns */
+  gap: 40px;
+  padding: 60px 40px;
+}
+
+.member img {
+  width: 100%;
+  height: 350px;
+  object-fit: flex;    /* fills the box, crops overflow, no stretching */
+  border-radius: 8px;
+}
+
+.member h2 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.member .rank {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.member ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.member li {
+  margin-bottom: 8px;
+}
+
+
+.about {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.bout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 40px;
+  align-items: center;
+}
+
+.Image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.join {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.join .images {
+  order: 1;
+}
+
+.join .text {
+  order: 2;
+  padding: 40px;
+}
+
+.join-text {
+  text-align: center;
+  margin-top: 100px;
+  order: 2;
+}
+
+.site-footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
 }
