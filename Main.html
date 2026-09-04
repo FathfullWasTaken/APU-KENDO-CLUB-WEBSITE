@@ -2,20 +2,22 @@
 <html>  
 <body>
 
-    <nav class="navbar">
-   <img src="https://studentaffairs.apu.edu.my/wp-content/uploads/sites/112/2023/10/APU-Kendo-Transparent-Sc-Chow-1.png" alt="APU Kendo Club Logo" class="logo">
-<h2 id="face">APU Kendo Club</h2></a>
+<nav class="navbar">
+  <img src="https://studentaffairs.apu.edu.my/wp-content/uploads/sites/112/2023/10/APU-Kendo-Transparent-Sc-Chow-1.png" alt="APU Kendo Club Logo" class="logo">
+  <h2 id="face">APU Kendo Club</h2>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#contact">Contact</a></li>
+    <button id="toggle-theme">Toggle Theme</button>
   </ul>
 </nav>
-<link href="style.css" rel="stylesheet">
 
+<link href="style.css" rel="stylesheet" id="light">
+<link href="dark.css" rel="stylesheet" id="dark" disabled>
 
-<section class="hero">
+<section class="hero pop-in">
   <img src="https://external-preview.redd.it/we-launched-our-kendo-clubs-website-v0-rul0GFDc49we6C7zAupJUhvPGqaqTcNjfSOcoYq1pWE.jpeg?auto=webp&s=67baa4a6910b9ea39393fb622847cd9a9a8b922a" class="hero-bg" alt="Kendo practice">
   <div class="hero-text">
     <p class="line1">剣道に<span class="highlight">愛</span>を注ぐ</p>
@@ -23,21 +25,18 @@
   </div>
 </section>
 
-<section class="info">
+<section class="info pop-in">
   <h1>APU Kendo Club</h1>
   <p id="p1">I am the bone of my sword, Unknown to life nor the death, Unlimited blade works!</p>
   <p id="p2">The APU Kendo Club is a student organization dedicated to the practice and promotion of Kendo, a traditional Japanese martial art. Our club provides a supportive environment for students to learn and improve their Kendo skills, while also fostering a sense of community and camaraderie among members.</p>
 </section>
 
-
 <hr>
-
 
 <h1 id="header">Our Guidance</h1>
 
-
 <section class="team">
-  <div class="member">
+  <div class="member pop-in">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIm4s7sR1J2QqPzABP6DTMeMMWfeI7ULSlF9VMH7wpOA&s=10" alt="Aimi Sensei">
     <h2>Aimi Sensei</h2>
     <p class="rank">6th Dan</p>
@@ -49,7 +48,7 @@
     </ul>
   </div>
 
-  <div class="member">
+  <div class="member pop-in">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuoceqD82DXIJxoimo7YAXPBrC9n20FmhMJ1MQ1YJ3eQ&s=10" alt="Alice Sensei">
     <h2>Alice Sensei</h2>
     <p class="rank">5th Dan</p>
@@ -59,7 +58,7 @@
     </ul>
   </div>
 
-  <div class="member">
+  <div class="member pop-in">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0gYg7wovf9ATV95z9DLHFKrO7cWNHJEZE-1K__7D2Q&s=10" alt="Komatsu Sensei">
     <h2>Komatsu Sensei</h2>
     <p class="rank">7th Dan</p>
@@ -72,51 +71,51 @@
 
 <hr>
 
-<section class="bout">
- <div class="Image">
-    <img src="https://instagram.fkul16-3.fna.fbcdn.net/v/t51.82787-15/619987795_18025387955791849_6970042731302643734_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=105&amp;ig_cache_key=MzE0NTYzMDIyNDgwNTA4ODM1NQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&amp;_nc_ohc=1xV5II5Dnn0Q7kNvwHUDTHm&amp;_nc_oc=AdoWL20CEQb52TJ-jLxoX_OK1GDy_DGiX5lpvri-ddLAPw8pf8TK87dsPPOlhnhB0D8&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=instagram.fkul16-3.fna&amp;_nc_gid=Xd5sWIyvP8_dRnvYtl1DxA&amp;_nc_ss=7a22e&amp;oh=00_AQL3Nyrt_gk92yQo77QlUTO5Y0joh-8bu-7_yAYD5sqxKQ&amp;oe=6A98D567"" alt="Kendo practice image">
-    </div>
-    <div class="text">
-        <h1>About Us</h1>
-        <p>The APU Kendo Club is a student organization dedicated to the practice and promotion of Kendo, a traditional Japanese martial art. Our club provides a supportive environment for students to learn and improve their Kendo skills, while also fostering a sense of community and camaraderie among members.</p>
-    </div>
-
- </div>
-
+<section class="bout pop-in">
+  <div class="Image">
+    <img src="https://instagram.fkul16-3.fna.fbcdn.net/v/t51.82787-15/619987795_18025387955791849_6970042731302643734_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzE0NTYzMDIyNDgwNTA4ODM1NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=1xV5II5Dnn0Q7kNvwHUDTHm&_nc_oc=AdoWL20CEQb52TJ-jLxoX_OK1GDy_DGiX5lpvri-ddLAPw8pf8TK87dsPPOlhnhB0D8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fkul16-3.fna&_nc_gid=Xd5sWIyvP8_dRnvYtl1DxA&_nc_ss=7a22e&oh=00_AQL3Nyrt_gk92yQo77QlUTO5Y0joh-8bu-7_yAYD5sqxKQ&oe=6A98D567" alt="Kendo practice image">
+  </div>
+  <div class="text">
+    <h1>About Us</h1>
+    <p>The APU Kendo Club is a student organization dedicated to the practice and promotion of Kendo, a traditional Japanese martial art. Our club provides a supportive environment for students to learn and improve their Kendo skills, while also fostering a sense of community and camaraderie among members.</p>
+  </div>
 </section>
 
 <hr>
 
-<h1>Join us today!</h1>
-
-<section class="join">
-     <div class = join-text>
-        <h2>Address:</h2>
-        <p2>Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p2>
-        <h2>Contact us here:</h2>
-        <p2>+603-8992 2000</p2>
-     </div>
-     <div class = images>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1478537199923!2d101.7005763!3d3.0550753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4abb795025d9%3A0x1c37182a714ba968!2sAsia%20Pacific%20University%20of%20Technology%20%26%20Innovation%20(APU)!5e0!3m2!1sen!2smy!4v1788016808224!5m2!1sen!2smy" 
-  width="600" 
-  height="450" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-        </div>
 
 
+
+
+
+<section class="join pop-in">
+  
+  <div class="join-text">
+    <button class="join-button pop-in" onclick="window.location.href='Put your shit here';">Join Us!</button>
+    <h2>Address:</h2>
+    <p>Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+    <h2>Contact us here:</h2>
+    <p>+603-8992 2000</p>
+    
+  </div>
+  <div class="images">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1478537199923!2d101.7005763!3d3.0550753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4abb795025d9%3A0x1c37182a714ba968!2sAsia%20Pacific%20University%20of%20Technology%20%26%20Innovation%20(APU)!5e0!3m2!1sen!2smy!4v1788016808224!5m2!1sen!2smy" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 </section>
-
-
 
 <hr>
 
-<footer class="site-footer">
-  <p>Nigger idk what to add here hauler at me.</p>
+<footer class="site-footer pop-in">
+  <p>&copy; 2026 APU Kendo Club. All rights reserved.</p>
 </footer>
 
+<script src="js.js"></script>
 </body>
 </html>
