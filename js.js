@@ -1,22 +1,14 @@
-
-const lightTheme = document.getElementById('light');
-const darkTheme = document.getElementById('dark');
 const toggleBtn = document.getElementById('toggle-theme');
 
 function setTheme(theme) {
-  if (theme === 'dark') {
-    lightTheme.disabled = true;
-    darkTheme.disabled = false;
-  } else {
-    lightTheme.disabled = false;
-    darkTheme.disabled = true;
-  }
+  document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
+  toggleBtn.textContent = theme === 'dark' ? '🌙' : '☀️';
 }
 
 toggleBtn.addEventListener('click', function() {
-  const isDark = !darkTheme.disabled;
-  setTheme(isDark ? 'light' : 'dark');
+  const current = document.documentElement.getAttribute('data-theme');
+  setTheme(current === 'dark' ? 'light' : 'dark');
 });
 
 // Apply saved theme when page loads
@@ -41,3 +33,4 @@ const observer = new IntersectionObserver((entries) => {
 popElements.forEach((el) => {
   observer.observe(el);
 });
+
