@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.top-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: black;
+    background-color: #450783;
+    padding: 20px 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center; 
+}
+
+
+h2{
+    color: rgb(7, 34, 125);
+    margin-left: 415px;
+    font-family: "Poppins", sans-serif;
+}
+
+.APU-Kendo-Club{
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 4px solid#b10a0a;
+    border-right: 4px solid#b10a0a;
+    border-top: 4px solid#b10a0a;
+    border-bottom: 4px solid#b10a0a;
+    padding-left: 20px;
+}
+
+.APU-Kendo-Club li{
+    text-align: left;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.ig-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.info-table{
+    width: 100%;
+    max-width: 700px;
+    border-collapse:collapse ;
+    border: 1px solid  rgb(41, 9, 118);
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.info-table th, .info-table td{ 
+    border-bottom: 1px solid rgb(41, 9, 118);
+    padding: 16px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.info-table th{
+    background-color: rgb(10, 207, 207);
+    border-right: 1px solid rgb(41, 9, 118);
+    width: 140px;
+    color: rgb(0, 0, 0);
+}
+
+.side-img {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.Kendo-icon{
+    position: absolute;
+    left: 30px;
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+    grid-column: 1;
+    justify-self: start;
+}
+
+.back-btn{
+    color: aquamarine; 
+    text-align: right;
+    font-size: medium; 
+    margin-left: 200px;
+    grid-column: 3;
+    justify-self: end;
+    top: 8px;
+    right: 15px;
+    position: relative;
+}
+
+.title-text{
+    grid-column: 2;
+    justify-self: center;
+}
